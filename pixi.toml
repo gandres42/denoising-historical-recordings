@@ -1,0 +1,95 @@
+[workspace]
+authors = ["gandres42 <gandres2416@gmail.com>"]
+channels = ["conda-forge"]
+name = "denoising"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+_libgcc_mutex = { version = "==0.1", build = "conda_forge" }
+_openmp_mutex = { version = "==4.5", build = "2_gnu" }
+bzip2 = { version = "==1.0.8", build = "h4bc722e_7" }
+ca-certificates = { version = "==2025.1.31", build = "hbcca054_0" }
+ld_impl_linux-64 = { version = "==2.43", build = "h712a8e2_4" }
+libexpat = { version = "==2.7.0", build = "h5888daf_0" }
+libffi = { version = "==3.4.6", build = "h2dba641_1" }
+libgcc = { version = "==14.2.0", build = "h767d61c_2" }
+libgcc-ng = { version = "==14.2.0", build = "h69a702a_2" }
+libgomp = { version = "==14.2.0", build = "h767d61c_2" }
+liblzma = { version = "==5.8.1", build = "hb9d3cd8_0" }
+libnsl = { version = "==2.0.1", build = "hd590300_0" }
+libsqlite = { version = "==3.49.1", build = "hee588c1_2" }
+libuuid = { version = "==2.38.1", build = "h0b41bf4_0" }
+libxcrypt = { version = "==4.4.36", build = "hd590300_1" }
+libzlib = { version = "==1.3.1", build = "hb9d3cd8_2" }
+ncurses = { version = "==6.5", build = "h2d0b736_3" }
+openssl = { version = "==3.5.0", build = "h7b32b05_0" }
+pip = ">=25.0.1,<26"
+python = { version = "==3.10.16", build = "habfa6aa_3_cpython" }
+readline = { version = "==8.2", build = "h8c095d6_2" }
+setuptools = { version = "==78.1.0", build = "pyhff2d567_0" }
+tk = { version = "==8.6.13", build = "noxft_h4845f30_101" }
+wheel = { version = "==0.45.1", build = "pyhd8ed1ab_1" }
+
+[activation]
+env = { TF_CPP_MIN_LOG_LEVEL = "2" }
+
+[pypi-dependencies]
+tensorflow-rocm = { url = "https://repo.radeon.com/rocm/manylinux/rocm-rel-6.3.3/tensorflow_rocm-2.15.1-cp310-cp310-manylinux_2_28_x86_64.whl" }
+absl-py = "==2.2.2"
+antlr4-python3-runtime = "==4.9.3"
+astunparse = "==1.6.3"
+cachetools = "==5.5.2"
+certifi = "==2025.1.31"
+cffi = "==1.17.1"
+charset-normalizer = "==3.4.1"
+flatbuffers = "==25.2.10"
+gast = "==0.6.0"
+google-auth = "==2.38.0"
+google-auth-oauthlib = "==1.2.1"
+google-pasta = "==0.2.0"
+grpcio = "==1.71.0"
+h5py = "==3.13.0"
+hydra-core = "==0.11.3"
+idna = "==3.10"
+importlib-metadata = "==8.6.1"
+keras = "==2.15.0"
+keras-preprocessing = "==1.1.2"
+libclang = "==18.1.1"
+markdown = "==3.7"
+markupsafe = "==3.0.2"
+ml-dtypes = "==0.3.2"
+numpy = "==1.26.4"
+oauthlib = "==3.2.2"
+omegaconf = "==1.4.1"
+opt-einsum = "==3.4.0"
+packaging = "==24.2"
+pandas = "==2.2.3"
+protobuf = "==4.25.6"
+pyasn1 = "==0.6.1"
+pyasn1-modules = "==0.4.2"
+pycparser = "==2.22"
+python-dateutil = "==2.9.0.post0"
+pytz = "==2025.2"
+pyyaml = "==6.0.2"
+requests = "==2.32.3"
+requests-oauthlib = "==2.0.0"
+rsa = "==4.9"
+scipy = "==1.15.2"
+six = "==1.17.0"
+soundfile = "==0.13.1"
+tensorboard = "==2.15.2"
+tensorboard-data-server = "==0.7.2"
+tensorboard-plugin-wit = "==1.8.1"
+tensorflow-estimator = "==2.15.0"
+tensorflow-io-gcs-filesystem = "==0.37.1"
+termcolor = "==3.0.1"
+tqdm = "==4.67.1"
+typing-extensions = "==4.13.2"
+tzdata = "==2025.2"
+urllib3 = "==2.4.0"
+werkzeug = "==3.1.3"
+wrapt = "==1.14.1"
+zipp = "==3.21.0"

@@ -1,4 +1,4 @@
-name: historical_denoiser
+name: denoising
 channels:
   - conda-forge
 dependencies:
@@ -27,7 +27,7 @@ dependencies:
   - tk=8.6.13=noxft_h4845f30_101
   - wheel=0.45.1=pyhd8ed1ab_1
   - pip:
-      - https://repo.radeon.com/rocm/manylinux/rocm-rel-6.3.3/tensorflow_rocm-2.15.1-cp310-cp310-manylinux_2_28_x86_64.whl
+      - tensorflow-rocm @ https://repo.radeon.com/rocm/manylinux/rocm-rel-6.3.3/tensorflow_rocm-2.15.1-cp310-cp310-manylinux_2_28_x86_64.whl
       - absl-py==2.2.2
       - antlr4-python3-runtime==4.9.3
       - astunparse==1.6.3
